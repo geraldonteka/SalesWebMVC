@@ -29,6 +29,8 @@ namespace SalesWebMVC.Models
         public double BaseSalary { get; set; }
 
         public Department Department { get; set; }
+
+        [Display(Name = "Department")]
         public int DepartmentId { get; set; }
 
         public ICollection<SalesRecord> SalesRecords { get; set; } = new List<SalesRecord>();
